@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: #f3f3f3;
+}
+/* Home Section */
+#home-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("background.png");
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+}
+#home-section .introduction{
+    background: rgba(211, 211, 211, 0.767);
+    border-radius: 15px;
+    padding: 30px;
+    width: 70%;
+    margin: 0 8px;
+}
+.introduction .pledge{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.1em;
+    font-weight: 600;
+    color: #12073D;
+    padding-bottom: 20px;
+    line-height: 1.2;
+}
+.introduction .intro-state{
+    font-size: .9em;
+    padding-bottom: 20px;
+}
+@media only screen and (max-width: 767px){
+    #home-section .introduction{
+        width: 100%;
+    }
+    .introduction .pledge{
+        font-size: 1.7em;
+    }
+}
+/* About Section */
+#aboutMe{
+    width: 100%;
+    background: #f3f3f3;
+}
+#aboutMe .title{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #12073D;
+    font-size: 2.2em;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 550;
+}
+.title span{
+    font-family: 'Times New Roman', Times, serif;
+    color: #1f0b44;
+}
+#aboutMe .container-sec{
+    display: flex;
+}
+.container-sec .personal-desc .myphoto{
+    border-radius: 9px;
+    width: 200px;
+    height: 200px;
+}
+.container-sec .personal-desc .my-name{
+    padding-top: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #1f0b44;
+    width: 200px;
+}
+.container-sec .personal-desc .links{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-sec .personal-desc .links i{
+    border-radius: 6px;
+    border: 1px solid #000000;
+    color: #444579;
+    padding: 3px;
+    font-size: 1.6em;
+    justify-content: space-evenly;
+    transition: .7s;
+}
+.container-sec .personal-desc .links i:hover{
+    background: #444579;
+    color: rgba(255, 255, 255, 0.836);
+}
+.container-sec .personal-desc .call-me{
+    text-align: center;
+    padding: 3px;
+    border: 1px solid #222222;
+    border-radius: 7px;
+    width: 100%;
+    justify-self: center;
+    transition: .6s;
+}
+.container-sec .personal-desc .call-me a{
+    letter-spacing: 1px;
+    color: #444579;
+    text-decoration: none;
+    font-size: var(--link-size);
+    padding: 2px 45px;
+    font-weight: 500;
+}
+.container-sec .personal-desc .call-me:hover{
+    background: #238d73;
+    box-shadow: 5px 5px 5px #bdbdbd;
+}
+.container-sec .personal-desc .call-me:hover a{
+    color: #f3f3f3;
+}
+.container-sec .description-text .skill-slide{
+    font-size: 1.7em;
+    color: #343436;
+}
+.container-sec .description-text .skill-slide .skill{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #711aeb;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-sec .description-text .text_me{
+    font-size: .95em;
+    color: #343436;
+    line-height: 1.6;
+}
+.container-sec .description-text .text_me strong{
+    color: #711aeb;
+}
+.container-sec .description-text .links{
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.description-text .links a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin: 5px 35px;
+    background: #238d73;
+    padding: 3px 20px;
+    border-radius: 7px;
+    transition: .3s ease;
+}
+.description-text .links a:hover{
+    background: #30A688;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 377px){
+    .container-sec .description-text .skill-slide{
+        font-size: 1.4em;
+    }
+    .container-sec .description-text .text_me{
+        font-size: .9em;
+    }
+    .description-text .links a{
+        font-size: .9em;
+        padding: 3px 15px;
+    }
+}
+@media only screen and (max-width: 524px){
+    #aboutMe .container-sec{
+        display: grid;        
+    }
+    .container-sec .personal-desc{
+        margin: 30px auto;
+    }
+    .container-sec .description-text{
+        padding: 30px;
+        width: 100%;
+    }
+    .description-text .links a{
+        margin: 5px 15px;
+    }
+}
+@media only screen and (min-width: 525px) and (max-width: 767px){
+    .container-sec .description-text .skill-slide{
+        font-size: 1.4em;
+    }
+    .container-sec .personal-desc{
+        display: grid;
+        margin-left: 20px;
+        justify-content: center;
+        align-self: center;
+        width: 40%;
+        height: 400px;
+    }
+    .container-sec .description-text{
+        width: 55%;
+    }
+    .description-text .links a{
+        font-size: .9em;
+        margin: 5px 15px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width: 1023px){
+    .container-sec .personal-desc{
+        display: grid;
+        margin-right: 30px;
+        justify-content: flex-end;
+        align-self: center;
+        width: 40%;
+        height: 330px;
+    }
+    .container-sec .description-text{
+        width: 55%;
+    }
+}
+@media only screen and (min-width:1024px){
+    .container-sec .personal-desc{
+        display: grid;
+        margin-right: 30px;
+        justify-content: flex-end;
+        align-self: center;
+        width: 40%;
+        height: 330px;
+    }
+    .container-sec .description-text{
+        width: 55%;
+    }
+    .container-sec .description-text .title{
+        padding-top: 30px;
+    }
+    .container-sec .description-text .skill-slide{
+        padding-top: 15px;
+    }
+    .container-sec .description-text .hire-me{
+        width: 70%;
+    }
+    .container-sec .description-text .text_me{
+        font-size: 1.13em;
+    }
+}
