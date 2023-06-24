@@ -51,7 +51,7 @@ body{
     width: 100%;
     background: #f3f3f3;
 }
-#aboutMe .title{
+.title{
     padding-top: 20px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -85,7 +85,7 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
-.container-sec .personal-desc .links i{
+.container-sec .personal-desc .links i, .iconify{
     border-radius: 6px;
     border: 1px solid #000000;
     color: #444579;
@@ -94,7 +94,8 @@ body{
     justify-content: space-evenly;
     transition: .7s;
 }
-.container-sec .personal-desc .links i:hover{
+
+.container-sec .personal-desc .links i:hover, .iconify:hover{
     background: #444579;
     color: rgba(255, 255, 255, 0.836);
 }
@@ -247,4 +248,74 @@ body{
     .container-sec .description-text .text_me{
         font-size: 1.13em;
     }
+}
+
+/* Services Section */
+#myServices{
+    width: 100%;
+    /* background: rgba(236, 234, 234, 0.767); */
+}
+#myServices .service-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.service-container .content{
+    margin: 15px;
+    min-width: 318px;
+    max-width: 400px;
+    min-height: 300px;
+    border: 1px solid #1f0b44;
+    border-radius: 7px;
+    padding: 15px;
+}
+.service-container .content .icon-div{
+    width: 55px;
+    height: 55px;
+    padding: 7px;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+.service-container .content i{
+    font-size: 2.6em;
+    color: #1f0b44;
+}
+
+.content .content-title{
+    font-size: 1.4em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 13px;
+}
+.content .description{
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+.content .call-div{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.content .contactBtn{
+    text-decoration: none;
+    padding: 5px 40px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    background: #4070f4;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.content .contactBtn:hover{
+    background: #0e4bf1;
 }
