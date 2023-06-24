@@ -55,7 +55,7 @@ body{
     padding-top: 20px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    color: #12073D;
+    color: #012fad;
     font-size: 2.2em;
     text-align: center;
     padding-bottom: 10px;
@@ -117,22 +117,42 @@ body{
     font-weight: 500;
 }
 .container-sec .personal-desc .call-me:hover{
-    background: #238d73;
+    background: #444579;
     box-shadow: 5px 5px 5px #bdbdbd;
 }
 .container-sec .personal-desc .call-me:hover a{
     color: #f3f3f3;
 }
-.container-sec .description-text .skill-slide{
-    font-size: 1.7em;
-    color: #343436;
+.container-sec .container{
+    overflow: hidden;
 }
-.container-sec .description-text .skill-slide .skill{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1em;
-    color: #711aeb;
-    margin-right: auto;
-    margin-left: auto;
+.container .text{
+    position: relative;
+    color: #4070f4;
+    font-family: 600;
+    font-size: 1.8em;
+}
+.container .text.first-text{
+    color: #202020;
+}
+.text.sec-text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f3f3f3;
+    border-left: 2px solid #4070f4;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 10px);
+    }
+    100%{
+        left: 0%;
+    }
 }
 .container-sec .description-text .text_me{
     font-size: .95em;
@@ -155,14 +175,14 @@ body{
     border: none;
     outline: none;
     margin: 5px 35px;
-    background: #238d73;
+    background: #4070f4;
     padding: 3px 20px;
     border-radius: 7px;
     transition: .3s ease;
 }
 .description-text .links a:hover{
-    background: #30A688;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    background: #0e4bf1;
+    box-shadow: 10px 10px 20px rgba(8, 8, 8, 0.329);
 }
 @media only screen and (max-width: 377px){
     .container-sec .description-text .skill-slide{
