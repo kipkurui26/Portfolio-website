@@ -67,7 +67,7 @@ body{
     padding-top: 20px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    color: #012fad;
+    color: #000513;
     font-size: 2.2em;
     text-align: center;
     padding-bottom: 10px;
@@ -75,65 +75,115 @@ body{
 }
 .title span{
     font-family: 'Times New Roman', Times, serif;
-    color: #1f0b44;
+    color: #3d2ae8;
 }
 #aboutMe .container-sec{
     display: flex;
 }
-.container-sec .personal-desc .myphoto{
-    border-radius: 9px;
-    width: 200px;
-    height: 200px;
+#aboutMe .container-sec .personal-desc{
+    align-self: flex-start;
 }
-.container-sec .personal-desc .my-name{
-    padding-top: 10px;
-    font-size: 1.5em;
-    text-align: center;
-    color: #1f0b44;
-    width: 200px;
-}
-.container-sec .personal-desc .links{
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.container-sec .personal-desc .links i, .iconify{
-    border-radius: 6px;
-    border: 1px solid #000000;
-    color: #444579;
+.personal-desc .card .image{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
     padding: 3px;
-    font-size: 1.6em;
-    justify-content: space-evenly;
-    transition: .7s;
+    background: #3d2ae8;
 }
-
-.container-sec .personal-desc .links i:hover, .iconify:hover{
-    background: #444579;
-    color: rgba(255, 255, 255, 0.836);
-}
-.container-sec .personal-desc .call-me{
-    text-align: center;
-    padding: 3px;
-    border: 1px solid #222222;
-    border-radius: 7px;
+.personal-desc .card .image img{
+    height: 100%;
     width: 100%;
-    justify-self: center;
-    transition: .6s;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
 }
-.container-sec .personal-desc .call-me a{
-    letter-spacing: 1px;
-    color: #444579;
+.card{
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    margin: 20px 0;
+    width: 280px;
+    height: auto;
+    border: 1px solid #3d2ae8;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    background: #3d2ae8;
+    border-radius: 20px 20px 0 0;
+}
+.card .card-content{
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+.card .media-icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card .media-icons i, .iconify{
+    font-size: 1.3em;
+    color: #fff;
+    opacity: .7;
+    margin-top: 5px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.card .media-icons i:hover, .iconify:hover{
+    opacity: 1;
+}
+.card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+}
+.name-profession .name{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.name-profession .profession{
+    font-size: 1em;
+    font-weight: 400;
+}
+.card .ratings{
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+}
+.card .ratings i{
+    font-size: 1.2em;
+    margin: 0 2px;
+    color: #3d2ae8;
+}
+.card .button-div{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.card .button-div .call-me{
+    background: #3d2ae8;
     text-decoration: none;
-    font-size: var(--link-size);
-    padding: 2px 45px;
-    font-weight: 500;
+    color: #fff;
+    padding: 3px 50px;
+    border-radius: 7px;
+    transition: all .3s ease;
 }
-.container-sec .personal-desc .call-me:hover{
-    background: #444579;
-    box-shadow: 5px 5px 5px #bdbdbd;
-}
-.container-sec .personal-desc .call-me:hover a{
-    color: #f3f3f3;
+.button-div .call-me:hover{
+    background: #0e4bf1;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 .container-sec .container{
     overflow: hidden;
@@ -187,7 +237,7 @@ body{
     border: none;
     outline: none;
     margin: 5px 35px;
-    background: #4070f4;
+    background: #3d2ae8;
     padding: 3px 20px;
     border-radius: 7px;
     transition: .3s ease;
@@ -220,7 +270,7 @@ body{
         padding: 3px 15px;
     }
 }
-@media only screen and (max-width: 524px){
+@media only screen and (max-width: 746px){
     #aboutMe .container-sec{
         display: grid;        
     }
@@ -235,12 +285,12 @@ body{
         margin: 5px 15px;
     }
 }
-@media only screen and (min-width: 525px) and (max-width: 767px){
+@media only screen and (min-width: 747px) and (max-width: 767px){
     .container-sec .description-text .container .text{
         font-size: 1.4em;
     }
     .container-sec .personal-desc{
-        display: grid;
+        display: flex;
         margin-left: 20px;
         justify-content: center;
         align-self: center;
@@ -361,7 +411,7 @@ body{
     font-size: 1em;
     border: none;
     outline: none;
-    background: #4070f4;
+    background: #3d2ae8;
     color: #fff;
     border-radius: 6px;
     cursor: pointer;
