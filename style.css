@@ -270,12 +270,16 @@ body{
     border: 1px solid #1f0b44;
     border-radius: 7px;
     padding: 15px;
+    transition: .3s;
+}
+.service-container .content:hover{
+    box-shadow: 10px 10px 30px rgba(8, 8, 8, 0.329);
 }
 .service-container .content .icon-div{
-    width: 55px;
+    width: 60px;
     height: 55px;
     padding: 7px;
-    border-radius: 50%;
+    border-radius: 10px;
     border: 1px solid;
     display: flex;
     justify-content: center;
@@ -290,6 +294,7 @@ body{
 }
 
 .content .content-title{
+    color: #1f0b44;
     font-size: 1.4em;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -298,6 +303,7 @@ body{
 .content .description{
     font-size: .9em;
     padding-bottom: 10px;
+    color: #464646;
 }
 .content .call-div{
     margin-top: 10px;
@@ -318,4 +324,5 @@ body{
 }
 .content .contactBtn:hover{
     background: #0e4bf1;
+    box-shadow: 10px 10px 30px rgba(8, 8, 8, 0.329);
 }
