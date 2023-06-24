@@ -8,7 +8,7 @@ function textLoad(){
         text.textContent = "Web Developer.";
     }, 4000);
     setTimeout(function(){
-        text.textContent = "UX/UI Designer";
+        text.textContent = "UX/UI Designer.";
     }, 8000);
 }
 
