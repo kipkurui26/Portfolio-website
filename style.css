@@ -46,7 +46,7 @@ body{
         font-size: 1.6em;
     }
     .introduction .intro-state{
-        font-size: .8em;
+        font-size: .92em;
         padding-bottom: 20px;
     }
 }
@@ -252,7 +252,7 @@ body{
         font-size: 1em;
     }
     .container-sec .description-text .text_me{
-        font-size: .9em;
+        font-size: .92em;
     }
     .description-text .links a{
         font-size: .9em;
@@ -397,17 +397,23 @@ body{
     padding-bottom: 13px;
 }
 .content .description{
-    font-size: .9em;
+    font-size: .97em;
     padding-bottom: 10px;
     color: #464646;
+    word-spacing: 1.2px;
 }
-.content .call-div{
-    margin-top: 10px;
+.call-div{
+    margin: 10px auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 90%
 }
-.content .contactBtn{
+.contactBtn{
+    margin: 10px;
     text-decoration: none;
+    text-align: center;
     padding: 5px 40px;
     font-size: 1em;
     border: none;
@@ -418,7 +424,66 @@ body{
     cursor: pointer;
     transition: 0.3s;
 }
-.content .contactBtn:hover{
+.contactBtn:hover{
     background: #0e4bf1;
     box-shadow: 10px 10px 30px rgba(8, 8, 8, 0.329);
+}
+/* Latest Project Section */
+#latestProject{
+    width: 100%;
+    background: rgba(224, 224, 224, 0.767);
+}
+#latestProject .project-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.project-container .project-content{
+    margin: 15px;
+    min-width: 318px;
+    max-width: 400px;
+    min-height: 300px;
+    border: 1px solid #1f0b44;
+    border-radius: 7px;
+    padding: 15px;
+    transition: .3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.project-content .project-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 3px auto;
+}
+.project-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.project-content .project-title{
+    color: #1f0b44;
+    font-size: 1.6em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 13px;
+}
+.project-content .project-description{
+    font-size: 1em;
+    padding-bottom: 5px;
+    color: #464646;
+    word-spacing: 1.2px;
+}
+.project-container .call-div{
+    margin: 5px auto;
+    width: 250px;
+}
+.project-container .call-div a{
+    width: 90%;
+}
+.project-container .call-div a:nth-child(1){
+    border: 1.2px solid #000513;
+    background-color: transparent;
+    color: #000513;
 }
