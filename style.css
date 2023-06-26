@@ -361,7 +361,7 @@ body{
     margin: 15px;
     min-width: 318px;
     max-width: 400px;
-    min-height: 300px;
+    min-height: 340px;
     border: 1px solid #1f0b44;
     border-radius: 7px;
     padding: 15px;
@@ -489,4 +489,62 @@ body{
     border: 1.2px solid #000513;
     background-color: transparent;
     color: #000513;
+}
+/* Customer Testimonials Section */
+#customerReview{
+    width: 100%;
+    background: #f3f3f3;
+}
+#customerReview .review-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.review-container .review-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    min-width: 318px;
+    max-width: 350px;
+    border: 1px solid #1f0b44;
+    border-radius: 7px;
+    padding: 15px;
+    transition: .3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.review-container .review-content:hover{
+    box-shadow: 10px 10px 30px rgba(8, 8, 8, 0.329);
+}
+.review-content .review-image{
+    top: 5px;
+    z-index: 100;
+    border: 2px solid #0e4bf1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+}
+.review-image img{
+    border-radius: 50%;
+    z-index: 100;
+    width: 120px;
+    height: 120px;
+}
+.review-content .customer-details{
+    padding-top: 10px;
+}
+.customer-details .customer-name{
+    text-align: center;
+    color: #000513;
+    font-size: 1.3em;
+}
+.customer-details  .customer-review{
+    color: #464646;
+    padding-top: 15px;
 }
