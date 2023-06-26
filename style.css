@@ -451,6 +451,9 @@ body{
     transition: .3s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+.project-container .project-content:hover{
+    box-shadow: 10px 10px 30px rgba(8, 8, 8, 0.329);
+}
 .project-content .project-image{
     width: 200px;
     height: 200px;
