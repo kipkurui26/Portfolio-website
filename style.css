@@ -439,6 +439,33 @@ body{
     background: #0e4bf1;
     box-shadow: 10px 10px 30px rgba(8, 8, 8, 0.329);
 }
+/* My Advice Section */
+#myAdvice{
+    width: 100%;
+    background: #d1d1d1b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#myAdvice .advice-container{
+    max-width: 800px;
+}
+.advice-container h1{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.6em;
+    color: #000513;
+}
+.advice-container h3{
+    text-align: center;
+    color: #12073D;
+}
+.advice-container li{
+    list-style: circle;
+    margin-left: 40px;
+    font-size: .87em;
+    padding-bottom: 4px;
+}
 /* Latest Project Section */
 #latestProject{
     width: 100%;
