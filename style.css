@@ -130,7 +130,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.card .media-icons i, .iconify{
+.card .media-icons i{
     font-size: 1.3em;
     color: #fff;
     opacity: .7;
@@ -138,7 +138,18 @@ body{
     transition: all .3s ease;
     cursor: pointer;
 }
-.card .media-icons i:hover, .iconify:hover{
+.card-content .media-icons iconify-icon{
+    font-size: 1.3em;
+    color: #fff;
+    opacity: .7;
+    margin-top: 5px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.card-content .media-icons iconify-icon:hover{
+    opacity: 1;
+}
+.card .media-icons i:hover{
     opacity: 1;
 }
 .card .name-profession{
@@ -575,6 +586,11 @@ body{
     padding-top: 15px;
     font-size: .95em;
 }
+.info-div .links{
+    border: 1px solid #000513;
+    margin-top: 10px;
+    border-radius: 8px;
+}
 .info-div .links .media-icons{
     margin: 10px;
     display: flex;
@@ -588,16 +604,27 @@ body{
     text-decoration: none;
     margin: 0 5px;
 }
-.info-div .media-icons a i, .iconify{
+.info-div .media-icons a i{
     font-size: 1.5em;
     color: #000513;
     transition: .6s;
     padding: 10px;
     border-radius: 8px;
 }
-.info-div .media-icons a i:hover, .iconify:hover{
+.info-div .media-icons a iconify-icon{
+    font-size: 1.5em;
+    color: #000513;
+    transition: .6s;
+    padding: 10px;
+    border-radius: 8px;
+}
+.info-div .media-icons a i:hover{
     background: #000513;
     color: #fff;
+}
+.info-div .media-icons a iconify-icon:hover{
+    background: #000513;
+    color: #fff; 
 }
 .contact-container .contact-fields{
     min-width: 300px;
@@ -649,8 +676,36 @@ body{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     transition: .5s;
 }
-
 .form .btns .btn:hover{
     background: #0e4bf1;
     box-shadow: 10px 10px 30px rgba(8, 8, 8, 0.329);
+}
+/* Footer Section */
+#footerSection{
+    width: 100%;
+    background: #f3f3f3;
+}
+#footerSection .footer-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container .logo-goal{
+    padding: 20px 10px;
+}
+.logo-goal h2{
+    text-align: center;
+    color: #000513;
+    font-size: 1.3em;
+}
+.logo-goal h2 span{
+    color: #0e4bf1;
+    font-size: 1.6em;
+}
+.logo-goal p{
+    color: #464646;
+    padding-top: 6px;
+    font-size: .95em;
 }
