@@ -689,16 +689,16 @@ body{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 .footer-container .logo-goal{
-    padding: 20px 10px;
+    padding: 20px 20px;
+    max-width: 350px;
 }
 .logo-goal h2{
-    text-align: center;
     color: #000513;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 .logo-goal h2 span{
     color: #0e4bf1;
@@ -706,6 +706,57 @@ body{
 }
 .logo-goal p{
     color: #464646;
-    padding-top: 6px;
-    font-size: .95em;
+    padding-top: 3px;
+    font-size: 1em;
+}
+.logo-goal p i{
+    color: #3d2ae8;
+    font-size: 1.3em;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.footer-container .footer-links{
+    padding: 20px 20px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-links a{
+    padding: 3px;
+    transition: .5s;
+}
+.footer-links a:hover{
+    color: #3d2ae8;
+    text-decoration: none;
+}
+.footer-container .address-section{
+    padding: 20px 20px;
+    max-width: 350px;
+}
+.address-section p{
+    padding-top: 10px;
+    color: #464646;
+    font-size: 1em;
+}
+.footer-container h3{
+    font-size: 1.3em;
+    padding-top: 20px;
+}
+#footerSection .Horizontal-line{
+    width: 90%;
+    border: 2px solid #121213;
+    margin: 10px auto;
+    border-radius: 4px;
+}
+#footerSection .copyright{
+    text-align: center;
+    padding-bottom: 5px;
+}
+.copyright a{
+    text-decoration: none;
+    transition: .5s;
+}
+.copyright a:hover{
+    text-decoration: underline;
 }
