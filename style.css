@@ -616,6 +616,7 @@ body{
     border-radius: 6px;
     padding: 3px 10px;
     font-size: .9em;
+    transition: .3s;
 }
 .form textarea{
     border: 1px solid #000513;
@@ -624,6 +625,10 @@ body{
     font-size: .9em;
     height: 100px;
     resize: none;
+    transition: .3s;
+}
+.form input:hover, textarea:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
 }
 .form .btns{
     margin: 15px 10px;
