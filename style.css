@@ -548,3 +548,104 @@ body{
     color: #464646;
     padding-top: 15px;
 }
+/* Contact Me Section */
+#contactMe{
+    width: 100%;
+    background: #dfdfdfd0;
+}
+#contactMe .contact-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container .info-div{
+    min-width: 300px;
+    max-width: 480px;
+    padding: 15px;
+}
+.contact-container h2{
+    text-align: center;
+    color: #000513;
+    font-size: 1.3em;
+}
+.info-div p{
+    color: #464646;
+    padding-top: 15px;
+    font-size: .95em;
+}
+.info-div .links .media-icons{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-div .links h2{
+    padding-top: 20px;
+}
+.info-div .media-icons a{
+    text-decoration: none;
+    margin: 0 5px;
+}
+.info-div .media-icons a i, .iconify{
+    font-size: 1.5em;
+    color: #000513;
+    transition: .6s;
+    padding: 10px;
+    border-radius: 8px;
+}
+.info-div .media-icons a i:hover, .iconify:hover{
+    background: #000513;
+    color: #fff;
+}
+.contact-container .contact-fields{
+    min-width: 300px;
+    padding: 15px;
+}
+.form div{
+    display: flex;
+    flex-direction: column;
+}
+.form label{
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.form input{
+    border: 1px solid #000513;
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: .9em;
+}
+.form textarea{
+    border: 1px solid #000513;
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: .9em;
+    height: 100px;
+    resize: none;
+}
+.form .btns{
+    margin: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form .btns .btn{
+    padding: 5px;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 1.2px;
+    width: 200px;
+    background: #3d2ae8;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+}
+
+.form .btns .btn:hover{
+    background: #0e4bf1;
+    box-shadow: 10px 10px 30px rgba(8, 8, 8, 0.329);
+}
