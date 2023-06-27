@@ -234,7 +234,7 @@ body{
     word-spacing: 1px;
 }
 .container-sec .description-text .text_me strong{
-    color: #711aeb;
+    color: #3d2ae8;
 }
 .container-sec .description-text .links{
     margin: 20px auto;
@@ -630,28 +630,18 @@ body{
 .info-div .media-icons a{
     text-decoration: none;
     margin: 0 5px;
-}
-.info-div .media-icons a i{
+    text-decoration: none;
+    border: 1px solid #000;
     font-size: 1.5em;
     color: #000513;
-    transition: .6s;
-    padding: 10px;
+    padding: 2px 5px;
+    margin-top: 5px;
     border-radius: 8px;
+    transition: .5s;
 }
-.info-div .media-icons a iconify-icon{
-    font-size: 1.5em;
-    color: #000513;
-    transition: .6s;
-    padding: 10px;
-    border-radius: 8px;
-}
-.info-div .media-icons a i:hover{
+.info-div .media-icons a:hover{
     background: #000513;
     color: #fff;
-}
-.info-div .media-icons a iconify-icon:hover{
-    background: #000513;
-    color: #fff; 
 }
 .contact-container .contact-fields{
     min-width: 300px;
@@ -717,7 +707,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
 }
 .footer-container .logo-goal{
     padding: 20px 20px;
@@ -756,6 +745,26 @@ body{
 .footer-links a:hover{
     color: #3d2ae8;
     text-decoration: none;
+}
+.footer-container .follow-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.follow-me a{
+    text-decoration: none;
+    border: 1px solid #000;
+    font-size: 1.5em;
+    color: #000513;
+    padding: 2px 5px;
+    margin-top: 5px;
+    border-radius: 8px;
+    transition: .5s;
+}
+.follow-me a:hover{
+    background: #000513;
+    color: #fff;
 }
 .footer-container .address-section{
     padding: 20px 20px;
