@@ -355,7 +355,6 @@ body{
         font-size: 1.13em;
     }
 }
-
 /* Services Section */
 #myServices{
     width: 100%;
@@ -399,7 +398,6 @@ body{
     font-size: 2.6em;
     color: #1f0b44;
 }
-
 .content .content-title{
     color: #1f0b44;
     font-size: 1.4em;
@@ -511,7 +509,7 @@ body{
     padding: 13px;
 }
 .project-content .project-description{
-    font-size: 1em;
+    font-size: .9em;
     padding-bottom: 5px;
     color: #464646;
     word-spacing: 1.2px;
