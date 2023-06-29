@@ -66,11 +66,17 @@ nav ul li a::before{
     background: #fff;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform .5s linear;
 }
 nav ul li a:hover:before{
     transform: scaleX(1);
     transform-origin: left;
+    transition: transform .5s linear;
+}
+nav ul .list-item.active a::before{
+    transform: scaleX(1);
+    width: 100%;
+    background: #fff;
+    
 }
 #check{
     display: none;
