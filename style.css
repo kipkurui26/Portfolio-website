@@ -22,9 +22,9 @@ nav .name{
     position: absolute;
     border: 2px solid #fff;
     display: inline-block;
-    top: 10px;
+    top: 15px;
     left: 4%;
-    padding: 5px 20px 3px;
+    padding: 2px 20px;
     border-radius: 6px;
 }
 .name h1{
@@ -35,8 +35,8 @@ nav .name{
 .name h1 span{
     font-family: 'Courier New', Courier, monospace;
     color: #0e4bf1;
-    font-size: 2em;
-    font-weight: 600;
+    font-size: 1.8em;
+    font-weight: 700;
 }
 nav .nav-container{
     float: right;
