@@ -75,8 +75,7 @@ nav .nav-container .list-item a:hover:before{
 nav .nav-container .list-item.active a::before{
     transform: scaleX(1);
     width: 100%;
-    background: #fff;
-    
+    background: #fff;  
 }
 #check{
     display: none;
@@ -90,6 +89,40 @@ label #closeBtn{
     margin-right: 40px;
     cursor: pointer;
     display: none;
+}
+nav .follow-links{
+    border-top: 2px solid #fff;
+    position: absolute;
+    background: #2c3e50c4;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+.follow-links h3{
+    color: #f2f2f2;
+    text-align: center;
+    letter-spacing: 1.3px;
+    word-spacing: 1.2px;
+    padding-bottom: 4px;
+}
+.follow-links a{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 2px;
+    border: 1px solid #f2f2f2;
+    margin: auto 4px;
+    color: #f2f2f2;
+    border-radius: 4px;
+    font-size: 1.3em;
+    transition: all .5s;
+    margin: 2px;
+}
+.follow-links a:hover{
+    color: #12073D;
+    background: #fff;
 }
 @media (max-width: 1118px){
     nav .name{
@@ -106,6 +139,11 @@ label #closeBtn{
     }
 }
 @media (max-width: 860px){
+    nav .follow-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     label #openBtn{
         display: block;
     }
@@ -121,8 +159,8 @@ label #closeBtn{
     }
     nav .nav-container .list-item{
         display: block;
-        margin: 40px 0;
-        line-height: 20px;
+        margin: 30px 0;
+        line-height: 15px;
     }
     nav .nav-container .list-item a{
         font-size: 1em;
