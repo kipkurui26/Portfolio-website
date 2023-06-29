@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- SMTPJS LINK -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
     <!-- Navigation Bar Section -->
@@ -363,7 +365,6 @@
                         </a>
                     </div>
                 </div>
-            
             </div>
             <div class="contact-fields">
                 <h2 class="query-form">Fill the fields below and submit your email.</h2>
@@ -389,6 +390,45 @@
                         </button>
                     </div>
                 </form>
+                <script>
+                    // Script for sending email to the client
+                    const full_name = document.getElementById("name");
+                    const email = document.getElementById("email-add");
+                    const message = document.getElementById("message");
+                    const submit = document.getElementsByClassName("form")[0];
+                    let popup = document.getElementById("popup");
+            
+                    // function closePopup(){
+                    //     popup.classList.remove("open-popup")
+                    // }
+                    submit.addEventListener("submit", (e) =>{
+                        e.preventDefault();
+                        let ebody = `
+                            <b>Name: </b>${full_name.value}
+                            <br>
+                            <b>Email Address: </b>${email.value}
+                            <br>
+                            <b>Message: </b>${message.value}
+                            <br>
+                            `;
+                        Email.send({
+                            SecureToken: "1b6baf0f-be2c-43ac-9b88-10ce152b418f",
+                            To: "kipkuruijapheth11@gmail.com",
+                            From: "kipkuruijapheth11@gmail.com",
+                            Subject: "New Message From " + full_name.value,
+                            Body: ebody,
+                        }).then(
+                            function openPopup(){
+                                // popup.classList.add("open-popup");
+                                console.log("Email Sent!!!");
+                                document.getElementById("name").value = "";
+                                document.getElementById("email-add").value = "";
+                                document.getElementById("message").value = "";
+                            }
+                        );
+                    })
+                </script>
+            
             </div>
         </div>
     </section>
