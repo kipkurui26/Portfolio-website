@@ -865,10 +865,96 @@ nav .follow-links a:nth-child(5){
     border-radius: 8px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     transition: .5s;
+    cursor: pointer;
 }
 .form .btns .btn:hover{
     background: #0e4bf1;
     box-shadow: 10px 10px 30px rgba(8, 8, 8, 0.329);
+}
+/* Toast Notification Section */
+.toast{
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    z-index: 999999;
+    border-radius: 12px;
+    background: #fff;
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #4070f4;
+    overflow: hidden;
+    transform: scaleX(0%);
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+.toast.active{
+    transform: translateX(0%);
+}
+.toast-content .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: #4070f4;
+    font-size: 1.3em;
+    color: #fff;
+    border-radius: 50%;
+}
+.toast .toast-content{
+    display: flex;
+    align-items: center;
+}
+.toast-content .message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+.message .text{
+    font-size: .9em;
+    font-weight: 400;
+    color: #666666;
+}
+.message .text.text-1{
+    font-weight: 600;
+    color: #333;
+}
+.toast .close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.toast .close:hover{
+    opacity: 1;
+}
+.toast .progress{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+}
+.toast .progress:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: #4070f4;
+}
+.progress.active:before{
+    animation: progress 5s linear forwards;
+}
+@keyframes progress{
+    100%{
+        right: 100%;
+    }
 }
 /* Footer Section */
 #footerSection{
@@ -970,4 +1056,38 @@ nav .follow-links a:nth-child(5){
 }
 .copyright a:hover{
     text-decoration: underline;
+}
+/* Scroll to top Button */
+#scroll-up{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: all 1s ease 0s;
+}
+
+#scroll-up:hover{
+    width: 35px;
+    height: 35px;
+}
+
+#scroll-up:hover .container-scroll{
+    background: rgb(53, 58, 65);
+}
+#scroll-up .container-scroll{
+    width: 100%;
+    height: 100%;
+    background: rgb(21, 26, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#scroll-up .container-scroll i{
+    font-size: 30px;
+    color: #f2f2f2;
 }

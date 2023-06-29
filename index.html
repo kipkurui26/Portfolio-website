@@ -373,62 +373,33 @@
                         <label for="full_name">Full Name</label>
                         <input type="text" name="name" id="name" required placeholder="Enter Your Full Name...">
                     </div>
-    
                     <div class="text-field">
                         <label for="email-add">Email Address</label>
                         <input type="email" name="email" id="email-add" required placeholder="Enter a Valid Email Address...">
                     </div>
-    
                     <div class="text-field">
                         <label for="message">Message</label>
                         <textarea type="text" name="message" id="message" required placeholder="Type Your Message..."></textarea>
-                    </div>
-                                        
+                    </div>         
                     <div class="btns">
                         <button type="submit" id="button" class="btn">
                             Send Email
                         </button>
                     </div>
                 </form>
-                <script>
-                    // Script for sending email to the client
-                    const full_name = document.getElementById("name");
-                    const email = document.getElementById("email-add");
-                    const message = document.getElementById("message");
-                    const submit = document.getElementsByClassName("form")[0];
-                    let popup = document.getElementById("popup");
-            
-                    // function closePopup(){
-                    //     popup.classList.remove("open-popup")
-                    // }
-                    submit.addEventListener("submit", (e) =>{
-                        e.preventDefault();
-                        let ebody = `
-                            <b>Name: </b>${full_name.value}
-                            <br>
-                            <b>Email Address: </b>${email.value}
-                            <br>
-                            <b>Message: </b>${message.value}
-                            <br>
-                            `;
-                        Email.send({
-                            SecureToken: "1b6baf0f-be2c-43ac-9b88-10ce152b418f",
-                            To: "kipkuruijapheth11@gmail.com",
-                            From: "kipkuruijapheth11@gmail.com",
-                            Subject: "New Message From " + full_name.value,
-                            Body: ebody,
-                        }).then(
-                            function openPopup(){
-                                // popup.classList.add("open-popup");
-                                console.log("Email Sent!!!");
-                                document.getElementById("name").value = "";
-                                document.getElementById("email-add").value = "";
-                                document.getElementById("message").value = "";
-                            }
-                        );
-                    })
-                </script>
-            
+            </div>
+        </div>
+        <!-- Toast Notification Section -->
+        <div class="toast">
+            <div class="toast-content">
+                <i class="fas fa-solid fa-check check"></i>
+    
+                <div class="message">
+                    <span class="text text-1">Email Sent...</span>
+                    <span class="text text-2">We'll be in touch soon!</span>
+                </div>
+                <i class="fa-solid fa-xmark close"></i>
+                <div class="progress"></div>
             </div>
         </div>
     </section>
@@ -498,6 +469,18 @@
             &#169; 
             <a href="https://wa.me/message/NVO42HJZB34IM1">Kipkurui Japheth Bartai</a> | All Rights Reserved. 2023.
         </p>
+    </section>
+
+    <!-- Scroll To Top Section -->
+    <section id="scroll-up" onclick="scrollToTop()">
+        <div class="container-scroll">
+            <i class='bx bx-chevrons-up'></i>
+        </div>
+        <script>
+            function scrollToTop(){
+                window.scrollTo(0, 0);
+            }
+        </script>
     </section>
 
 
