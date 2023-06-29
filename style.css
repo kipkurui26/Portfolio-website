@@ -38,16 +38,16 @@ nav .name{
     font-size: 2em;
     font-weight: 600;
 }
-nav ul{
+nav .nav-container{
     float: right;
     margin-right: 25px;
 }
-nav ul li{
+nav .nav-container .list-item{
     display: inline-block;
     line-height: 80px;
     margin: 0 15px;
 }
-nav ul li a{
+nav .nav-container .list-item a{
     color: #fff;
     position: relative;
     font-size: 1.1em;
@@ -56,7 +56,7 @@ nav ul li a{
     text-decoration: none;
     padding: 5px 0;
 }
-nav ul li a::before{
+nav .nav-container .list-item a::before{
     position: absolute;
     content: "";
     height: 3px;
@@ -67,12 +67,12 @@ nav ul li a::before{
     transform: scaleX(0);
     transform-origin: right;
 }
-nav ul li a:hover:before{
+nav .nav-container .list-item a:hover:before{
     transform: scaleX(1);
     transform-origin: left;
     transition: transform .5s linear;
 }
-nav ul .list-item.active a::before{
+nav .nav-container .list-item.active a::before{
     transform: scaleX(1);
     width: 100%;
     background: #fff;
@@ -101,7 +101,7 @@ label #closeBtn{
         left: 3%;
         padding: 5px 15px 1px;
     }
-    nav ul li a{
+    nav .nav-container .list-item a{
         font-size: .98em;
     }
 }
@@ -109,7 +109,7 @@ label #closeBtn{
     label #openBtn{
         display: block;
     }
-    ul{
+    .nav-container{
         position: fixed;
         width: 280px;
         height: 100vh;
@@ -119,19 +119,19 @@ label #closeBtn{
         text-align: center;
         transition: all .7s ease-in-out;
     }
-    nav ul li{
+    nav .nav-container .list-item{
         display: block;
         margin: 40px 0;
         line-height: 20px;
     }
-    nav ul li a{
+    nav .nav-container .list-item a{
         font-size: 1em;
     }
     label #openBtn,
     label #closeBtn{
         margin-right: 20px;
     }
-    #check:checked ~ ul{
+    #check:checked ~ .nav-container{
         left: 0;
     }
     #check:checked ~ label #openBtn{
@@ -590,7 +590,7 @@ label #closeBtn{
     text-align: center;
     color: #12073D;
 }
-.advice-container li{
+.advice-container .benefit-list{
     list-style: circle;
     margin-left: 40px;
     font-size: .87em;

@@ -23,7 +23,6 @@ for (let i=0; i<list.length; i++){
         while(j < list.length){
             list[j++].className = 'list-item';
         }
-        list[i].className = "list-item active";
-        console.log("active");
+        list[i].className = "list-item active"; 
     }
 }
