@@ -10,6 +10,131 @@
 body{
     background: #f3f3f3;
 }
+/* Navigation Bar Section  */
+nav{
+    z-index: 99999;
+    height: 80px;
+    background: #2c3e50;
+    position: fixed;
+    width: 100%;
+}
+nav .name{
+    position: absolute;
+    border: 2px solid #fff;
+    display: inline-block;
+    top: 10px;
+    left: 4%;
+    padding: 5px 20px 3px;
+    border-radius: 6px;
+}
+.name h1{
+    font-size: 1.2em;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+.name h1 span{
+    font-family: 'Courier New', Courier, monospace;
+    color: #0e4bf1;
+    font-size: 2em;
+    font-weight: 600;
+}
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+nav ul li a{
+    color: #fff;
+    position: relative;
+    font-size: 1.1em;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 0;
+}
+nav ul li a::before{
+    position: absolute;
+    content: "";
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s linear;
+}
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+#check{
+    display: none;
+}
+label #openBtn,
+label #closeBtn{
+    color: #fff;
+    font-size: 1.8em;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 1118px){
+    nav .name{
+        left: 5%;
+    }
+}
+@media (max-width: 944px){
+    nav .name{
+        left: 3%;
+        padding: 5px 15px 1px;
+    }
+    nav ul li a{
+        font-size: .98em;
+    }
+}
+@media (max-width: 860px){
+    label #openBtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 280px;
+        height: 100vh;
+        background: #34495e;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .7s ease-in-out;
+    }
+    nav ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 20px;
+    }
+    nav ul li a{
+        font-size: 1em;
+    }
+    label #openBtn,
+    label #closeBtn{
+        margin-right: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~ label #openBtn{
+        display: none;
+    }
+    #check:checked ~ label #closeBtn{
+        display: block;
+    }
+}
 /* Home Section */
 #home-section{
     display: flex;
@@ -718,6 +843,8 @@ body{
 .logo-goal h2 span{
     color: #0e4bf1;
     font-size: 1.6em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
 }
 .logo-goal p{
     color: #464646;
