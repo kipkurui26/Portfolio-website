@@ -97,6 +97,7 @@ nav .follow-links{
     width: 100%;
     display: none;
     flex-direction: column;
+    margin: 10px auto 20px;
 }
 .follow-links h3{
     color: #f2f2f2;
