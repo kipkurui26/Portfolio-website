@@ -105,6 +105,7 @@ nav .follow-links{
     letter-spacing: 1.3px;
     word-spacing: 1.2px;
     padding-bottom: 4px;
+    padding-top: 15px;
 }
 .follow-links a{
     width: 60%;
@@ -120,6 +121,9 @@ nav .follow-links{
     font-size: 1.3em;
     transition: all .5s;
     margin: 2px;
+}
+nav .follow-links a:nth-child(5){
+    margin-bottom: 15px;
 }
 .follow-links a:hover{
     color: #12073D;
