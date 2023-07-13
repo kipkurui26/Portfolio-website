@@ -738,14 +738,14 @@ nav .follow-links a:nth-child(5){
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
 }
 .review-image img{
     border-radius: 50%;
     z-index: 100;
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
 }
 .review-content .customer-details{
     padding-top: 10px;
@@ -994,18 +994,19 @@ nav .follow-links a:nth-child(5){
 }
 .footer-container .footer-links{
     padding: 20px 20px;
-    max-width: 350px;
+    max-width: 360px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .footer-links a{
     padding: 3px;
-    transition: .5s;
+    transition: .7s;
 }
 .footer-links a:hover{
     color: #3d2ae8;
     text-decoration: none;
+    padding-left: 20px;
 }
 .footer-container .follow-me{
     display: flex;
